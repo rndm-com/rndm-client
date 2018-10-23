@@ -1,0 +1,26 @@
+{
+  "name": "@rndm/client",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "author": "RNDM",
+  "license": "Apache-2.0",
+  "bin": "cli/index.js",
+  "description": "RNDM Client: A CLI util for RNDM Render",
+  "homepage": "https://github.com/rndm-com/rndm-client#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rndm-com/rndm-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rndm-com/rndm-client/issues"
+  },
+  "scripts": {
+    "postinstall": "node cli/index.js init --node"
+  },
+  "dependencies": {
+    "babel-plugin-transform-react-createelement-to-jsx": "^1.0.1",
+    "ps-node": "^0.1.6",
+    "@rndm/render": "^0.1.0",
+    "@rndm/render-preset-core": "^0.1.0"
+  }
+}
