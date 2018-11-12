@@ -5,7 +5,7 @@ const program = require('commander');
 const init = require('./actions/init');
 const example = require('./actions/example');
 
-const name = 'rndm-client';
+const name = '@rndm/client';
 
 program
   .version('0.1.0')

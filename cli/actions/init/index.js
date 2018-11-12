@@ -1,6 +1,6 @@
 const fs = require('fs');
 const { range, without } = require('lodash');
-const { mkDir } = require('rndm-utils');
+const { mkDir } = require('@rndm/utils');
 const babel = require('babel-core');
 const generator = require('babel-generator');
 
@@ -22,7 +22,7 @@ const init = (cmd = {}) => {
   const imports = [];
 
   const rewire = [supporting, 'rewire_modules.json'].join('/');
-  const rndmRender = 'rndm-render';
+  const rndmRender = '@rndm/render';
 
   if (!fs.existsSync(rewire)) {
     mkDir(supporting);
@@ -111,7 +111,7 @@ const init = (cmd = {}) => {
     const { code } = generator.default(babelified.ast, options);
 
     const jsx = babel.transform(code, {
-      plugins: ['transform-react-createelement-to-jsx'],
+      plugins: ['@babel/plugin-transform-react-jsx'],
     });
 
     fs.writeFileSync(file, jsx.code + '\n')

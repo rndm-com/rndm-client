@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { mkDir } = require('rndm-utils');
+const { mkDir } = require('@rndm/utils');
 const generateInstructions = require('./generateInstructions');
 const current = process.cwd();
 
@@ -19,7 +19,7 @@ const createExample = (pkg, template, nodeModules) => {
   const view = [views, viewFilename].join('/');
   if (!fs.existsSync(json)) fs.writeFileSync(json, string);
   if (!fs.existsSync(view)) {
-    const js = `import { render } from 'rndm-render';
+    const js = `import { render } from '@rndm/render';
 import views from '../json/${jsonFilename}';
 
 const Example = () => render(views);

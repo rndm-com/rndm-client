@@ -1,7 +1,7 @@
 const fs = require('fs');
 const colors = require('colors');
 const { range } = require('lodash');
-const { readDir } = require('rndm-utils');
+const { readDir } = require('@rndm/utils');
 const babel = require('babel-core');
 const generator = require('babel-generator');
 const createExample = require('./createExample');
