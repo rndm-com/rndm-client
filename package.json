@@ -1,6 +1,6 @@
 {
   "name": "@rndm/client",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "src/index.js",
   "author": "RNDM",
   "license": "Apache-2.0",
@@ -18,9 +18,9 @@
     "postinstall": "node cli/index.js init --node"
   },
   "dependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.0.0",
     "@rndm/render": "^0.1.0",
     "@rndm/render-preset-core": "^0.1.0",
-    "@babel/plugin-transform-react-jsx": "^1.0.1",
     "colors": "^1.3.2",
     "ps-node": "^0.1.6"
   }
