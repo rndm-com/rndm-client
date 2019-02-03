@@ -1,8 +1,8 @@
-# RNDM Client
+# [RNDM](https://www.rndm.com) Client
 
 ## About
 
-Assistant Utility for [RNDM Render](https://github.com/rndm-com/rndm-render). This client packages [RNDM Render](https://github.com/rndm-com/rndm-render) along side the [Core Preset](https://github.com/rndm-com/rndm-render-preset-core).
+Assistant Utility for [RNDM Render](https://www.rndm.com/docs/rndm-render). This client packages [RNDM Render](https://www.rndm.com/docs/rndm-render) along side the [Core Preset](https://www.rndm.com/docs/rndm-render/preset/core).
 
 ### Why RNDM?
 
@@ -18,4 +18,4 @@ This type of flexibility allows for less code and more statically defined pages,
 npm install --save-dev @rndm/client
 ```
 
-For further details and documentation on using RNDM Render, checkout these [documents](https://github.com/rndm-com/rndm-render).
+For further details and documentation on using RNDM Render, checkout these [documents](https://www.rndm.com/docs/rndm-render).
